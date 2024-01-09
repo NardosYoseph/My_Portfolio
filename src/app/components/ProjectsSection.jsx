@@ -7,33 +7,25 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
+    title: "Portfolio Website",
     description: "Project 1 description",
-    image: "/images/projects/1.png",
+    image: "/images/portfolio1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
+ 
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Incident Tracking Website for Amhara-Bank",
+    description: "Project 3 description",
+    image: "/images/abaincident.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
     title: "Food Ordering Application",
     description: "Project 4 description",
     image: "/images/projects/4.png",
@@ -41,10 +33,17 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
-  
+  {
+    id: 4,
+    title: "Betting App",
+    description: "Desktop App",
+    image: "/images/betting1.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
   
 ];
-
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
