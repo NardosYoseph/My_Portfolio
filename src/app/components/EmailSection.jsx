@@ -5,6 +5,8 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const EmailSection = () => {
  
@@ -32,11 +34,13 @@ const EmailSection = () => {
    const response= emailjs.send('service_axkmcyj','template_h0e4ehj', templateParams, '8TAl-WXVb9a_JQQJX')
       .then((response) => {
         console.log('Email sent successfully:', response);
-        // You can add additional logic here, like showing a success message or redirecting
+        toast.success('Email sent successfully!');
       })
       .catch((error) => {
         console.error('Email failed to send:', error);
-        // You can handle errors here, e.g., show an error message to the user
+        console.log(error);
+        // Display an error toast notification
+        toast.error('Email failed to send.');
       });
     };
 
@@ -67,10 +71,7 @@ const EmailSection = () => {
       </div>
       <div>
         
-         if(response) { <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
-          </p>
-        }
+ 
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
@@ -129,6 +130,7 @@ const EmailSection = () => {
             </button>
           </form>
         
+          <ToastContainer />
       </div>
     </section>
   );
