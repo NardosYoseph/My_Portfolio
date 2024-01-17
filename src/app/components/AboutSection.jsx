@@ -10,12 +10,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
        <li>Flutter</li>
-        <li>Node.js</li>
         <li>React NextJS</li>
-        <li>C++</li>
-        <li>Java</li>
-        <li>Spring boot</li>
-
       </ul>
     ),
   },
