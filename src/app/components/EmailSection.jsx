@@ -4,40 +4,41 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import emailjs from 'emailjs-com';
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+ 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Replace these values with your Email.js template ID, user ID, and service ID
+    const templateParams = {
+      to_name: 'Nardos Yosef',
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+    };
+
+   const response= emailjs.send('service_axkmcyj','template_h0e4ehj', templateParams, '8TAl-WXVb9a_JQQJX')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        // You can add additional logic here, like showing a success message or redirecting
+      })
+      .catch((error) => {
+        console.error('Email failed to send:', error);
+        // You can handle errors here, e.g., show an error message to the user
+      });
+    };
 
   return (
     <section
@@ -65,16 +66,33 @@ const EmailSection = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
+        
+         if(response) { <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
           </p>
-        ) : (
+        }
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">
               <label
-                htmlFor="email"
+                htmlFor="name"
                 className="text-white block mb-2 text-sm font-medium"
+              >
+                Your name
+              </label>
+              <input
+                name="name"
+                type="text"
+                id="name"
+                required
+                onChange={handleChange} 
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="your name"
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                htmlFor="email"
+                className="text-white block text-sm mb-2 font-medium"
               >
                 Your email
               </label>
@@ -83,24 +101,9 @@ const EmailSection = () => {
                 type="email"
                 id="email"
                 required
+                onChange={handleChange} 
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Subject
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="nardos@email.com"
               />
             </div>
             <div className="mb-6">
@@ -115,6 +118,7 @@ const EmailSection = () => {
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                 placeholder="Let's talk about..."
+                onChange={handleChange} 
               />
             </div>
             <button
@@ -124,7 +128,7 @@ const EmailSection = () => {
               Send Message
             </button>
           </form>
-        )}
+        
       </div>
     </section>
   );
