@@ -38,7 +38,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-  I am a passionate web and mobile developer with a strong foundation in creating dynamic and user-friendly applications. My skills include front-end and back-end development, and I am dedicated to delivering high-quality solutions. Let's work together to bring your ideas to life!
+  I am a passionate web and mobile developer with a strong foundation in creating dynamic and user-friendly applications and I am dedicated to delivering high-quality solutions. Let's work together to bring your ideas to life!
 </p>
           
         </motion.div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden">
  
             <Image
-              src="/images/hero-image.jpg"
+              src="/images/nardii.jpg"
               alt="hero image"
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"
               width={400}
