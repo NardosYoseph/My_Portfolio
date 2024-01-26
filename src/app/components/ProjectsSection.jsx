@@ -5,41 +5,32 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
+
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "Rect nextjs",
-    image: "/images/portfolio1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
- 
-  {
-    id: 2,
     title: "Incident Tracking Website for Amhara-Bank",
     description: "React nextjs",
     image: "/images/aba.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/NardosYoseph/aba_db_incident_tracker",
     previewUrl: "/",
   },
   {
-    id: 3,
+    id: 2,
     title: "E-commerce Application",
     description: "Flutter Mobile App",
     image: "/images/e-app2.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/NardosYoseph/Futter-e-commerce-app",
     previewUrl: "/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Betting App",
     description: "Flutter Desktop App",
     image: "/images/betting1.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/NardosYoseph/Betting-App-with-Hive",
     previewUrl: "/",
   },
   
