@@ -11,6 +11,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
        <li>Flutter</li>
         <li>React NextJS</li>
+        <li>NodeJS</li>
       </ul>
     ),
   },
@@ -51,9 +52,9 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a frontend web and Mobile developer with a passion for creating
+            I am a full-stack software developer with a passion for creating
             interactive and responsive web and Mobile applications. I have experience
-            working with JavaScript, React, Dart, Flutter Git. 
+            working with React, Dart, Flutter, Node Git. 
             I am a quick learner and I am always looking to expand my knowledge and skill set.
             I am a team player and I am excited to work with others to create amazing applications.
           </p>

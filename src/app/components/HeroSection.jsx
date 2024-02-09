@@ -26,9 +26,9 @@ const HeroSection = () => {
               sequence={[
                 "Nardos",
                 1000,
-                "Web Developer",
+                "Full-stack",
                 1000,
-                "Mobile Developer",
+                "Software Developer",
                 1000,
                
               ]}
@@ -38,7 +38,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-  I am a passionate web and mobile developer with a strong foundation in creating dynamic and user-friendly applications and I am dedicated to delivering high-quality solutions. Let's work together to bring your ideas to life!
+  I am a passionate full-stack software developer with a strong foundation in creating dynamic and user-friendly applications and I am dedicated to delivering high-quality solutions. Let's work together to bring your ideas to life!
 </p>
           
         </motion.div>
@@ -52,7 +52,7 @@ const HeroSection = () => {
  
             <Image
               src="/images/nardii.jpg"
-              alt="hero image"
+              alt="my image"
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full"
               width={400}
               height={400}
