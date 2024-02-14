@@ -33,6 +33,15 @@ const projectsData = [
     gitUrl: "https://github.com/NardosYoseph/Betting-App-with-Hive",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "Event App",
+    description: "Flutter App",
+    image: "/images/event.jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/NardosYoseph/Flutter-Event-App",
+    previewUrl: "/",
+  },
   
 ];
 const ProjectsSection = () => {
