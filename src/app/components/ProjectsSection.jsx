@@ -36,7 +36,7 @@ const projectsData = [
   {
     id: 4,
     title: "Event App",
-    description: "Flutter App",
+    description: "Flutter Mobile App",
     image: "/images/event.jpg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/NardosYoseph/Flutter-Event-App",
