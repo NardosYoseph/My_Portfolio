@@ -45,7 +45,7 @@ const projectsData = [
     id: 5,
     title: "Church App",
     description: "Flutter Mobile App",
-    image: "/images/event.jpg",
+    image: "/images/living word.jpg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/NardosYoseph/Living-Word-",
     previewUrl: "/",
