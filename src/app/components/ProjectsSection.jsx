@@ -41,6 +41,14 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/NardosYoseph/Flutter-Event-App",
     previewUrl: "/",
+  },{
+    id: 5,
+    title: "Church App",
+    description: "Flutter Mobile App",
+    image: "/images/event.jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/NardosYoseph/Living-Word-",
+    previewUrl: "/",
   },
   
 ];
