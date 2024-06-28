@@ -17,8 +17,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Church Application",
-    description: "Flutter Mobile App",
+    title: "Living Word",
+    description: "Flutter Church Application",
     image: "/images/living_word.jpg",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/NardosYoseph/Living-Word-",
@@ -44,8 +44,8 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Church Web",
-    description: "Church website",
+    title: "Living Word",
+    description: "Church website with Nextjs and nodejs",
     image: "/images/livingword.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/NardosYoseph/Living-Word-",
