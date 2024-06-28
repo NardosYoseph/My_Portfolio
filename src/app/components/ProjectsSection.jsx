@@ -41,16 +41,25 @@ const projectsData = [
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/NardosYoseph/Flutter-Event-App",
     previewUrl: "/",
-  },{
+  },
+  {
     id: 5,
     title: "Church Web",
     description: "Church website",
-    image: "/images/living_word_web.png",
+    image: "/images/livingword.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/NardosYoseph/Living-Word-",
-    previewUrl: "/",
+    previewUrl: "https://livingword.vercel.app/",
   },
-  
+  {
+    id: 6,
+    title: "E-commerce Website",
+    description: "E-commerce website with nextjs and nodejs ",
+    image: "/images/ayzot.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/NardosYoseph/Ayzot_Ecommerce_Frontend",
+    previewUrl: "https://ayzot.vercel.app/",
+  }
 ];
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -108,6 +117,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              
             />
           </motion.li>
         ))}
