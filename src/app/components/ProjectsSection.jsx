@@ -53,7 +53,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "E-commerce Website",
+    title: "Ayzot E-commerce",
     description: "E-commerce website with nextjs and nodejs ",
     image: "/images/ayzot.png",
     tag: ["All", "Web"],
