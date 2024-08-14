@@ -8,6 +8,8 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
+            <head> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9635869266478553"
+     crossorigin="anonymous"></script></head>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

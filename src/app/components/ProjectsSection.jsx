@@ -81,6 +81,8 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
+            <head> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9635869266478553"
+     crossorigin="anonymous"></script></head>
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
