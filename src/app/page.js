@@ -9,6 +9,8 @@ import AchievementsSection from "./components/AchievementsSection";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#121212]">
+      <head> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9635869266478553"
+     crossorigin="anonymous"></script></head>
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
