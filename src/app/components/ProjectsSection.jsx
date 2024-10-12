@@ -59,6 +59,14 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/NardosYoseph/Ayzot_Ecommerce_Frontend",
     previewUrl: "https://ayzot.vercel.app/",
+  },{
+    id: 7,
+    title: "Teym Technologies",
+    description: "IT Solutions Company website with nextjs",
+    image: "/images/teym.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/NardosYoseph/teym_technologies",
+    previewUrl: "https://teym-technologies.vercel.app/",
   }
 ];
 const ProjectsSection = () => {
