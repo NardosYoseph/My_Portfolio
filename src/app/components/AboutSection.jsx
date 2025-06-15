@@ -10,7 +10,8 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
        <li>Flutter</li>
-        <li>React NextJS</li>
+        <li>Firebase</li>
+        <li>NextJS</li>
         <li>NodeJS</li>
         <li>MongoDB</li>
       </ul>
@@ -21,7 +22,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Woldia University,BSC in Information Technology</li>
+        <li>Woldia University,BSC in Information Technology, CGPA 3.91</li>
       </ul>
     ),
   },
@@ -30,7 +31,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Girls Can Code Certificate(by American Embacy)</li>
+        <li>Girls Can Code Certificate(by American Embassy)</li>
       </ul>
     ),
   },
@@ -55,9 +56,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full-stack software developer with a passion for creating
-            interactive and responsive web and Mobile applications. I have experience
-            working with React Nextjs, Flutter, Nodejs and MongoDB.
+            I am a skilled mobile app developer with a passion for creating
+            interactive and high-performance Mobile applications. I am experienced in state management solutions including Provider, 
+            Riverpod, BLoC, and GetX, and apply scalable architectures such as Clean Architecture, MVC, and MVVM. 
+            My expertise also includes Firebase integration (Auth, Firestore, FCM) and backend API integration (REST and SOAP).
             I am a quick learner and I am always looking to expand my knowledge and skill set.
             I am a team player and I am excited to work with others to create amazing applications.
           </p>

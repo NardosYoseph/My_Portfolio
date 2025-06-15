@@ -5,26 +5,25 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
-
   {
     id: 1,
-    title: "Incident Tracking Website for Amhara-Bank",
-    description: "React nextjs",
-    image: "/images/aba.png",
+    title: "Real-time Chat Application",
+    description: "Flutter Chat Application\nwith Firebase",
+    image: "/images/chat_app.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/NardosYoseph/aba_db_incident_tracker",
+    gitUrl: "https://github.com/NardosYoseph/flutter_realtime_chat_app",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Living Word",
-    description: "Flutter Church Application",
-    image: "/images/living_word.jpg",
+    title: "Event Ticketing App",
+    description: "Flutter Mobile App\nBackend-nodejs\nChapa payment integrated",
+    image: "/images/event.jpg",
     tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/NardosYoseph/Living-Word-",
+    gitUrl: "https://github.com/NardosYoseph/Flutter-Event-App",
     previewUrl: "/",
   },
-  {
+   {
     id: 3,
     title: "Betting App",
     description: "Flutter Desktop App\nwith Hive local storage",
@@ -35,15 +34,25 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Event Ticketing App",
-    description: "Flutter Mobile App\nBackend-nodejs\nChapa payment integrated",
-    image: "/images/event.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/NardosYoseph/Flutter-Event-App",
+    title: "Incident Tracking Website for Amhara-Bank",
+    description: "React nextjs",
+    image: "/images/aba.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/NardosYoseph/aba_db_incident_tracker",
     previewUrl: "/",
   },
   {
     id: 5,
+    title: "Living Word",
+    description: "Flutter Church Application",
+    image: "/images/living_word.jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/NardosYoseph/Living-Word-",
+    previewUrl: "/",
+  },
+
+  {
+    id: 6,
     title: "Living Word",
     description: "Church website with Nextjs and nodejs",
     image: "/images/livingword.png",
@@ -52,7 +61,7 @@ const projectsData = [
     previewUrl: "https://livingword.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Ayzot E-commerce",
     description: "E-commerce website with nextjs and nodejs ",
     image: "/images/ayzot.png",
@@ -60,7 +69,7 @@ const projectsData = [
     gitUrl: "https://github.com/NardosYoseph/Ayzot_Ecommerce_Frontend",
     previewUrl: "https://ayzot.vercel.app/",
   },{
-    id: 7,
+    id: 8,
     title: "Teym Technologies",
     description: "IT Solutions Company website with nextjs",
     image: "/images/teym.png",

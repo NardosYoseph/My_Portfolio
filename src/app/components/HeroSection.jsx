@@ -28,9 +28,9 @@ const HeroSection = () => {
               sequence={[
                 "Nardos",
                 1000,
-                "Full-stack",
+                "Mobile App",
                 1000,
-                "Software Developer",
+                "Developer",
                 1000,
                
               ]}
@@ -40,8 +40,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-  I am a passionate full-stack software developer with a strong foundation in creating dynamic and user-friendly websites and mobile applications and I am dedicated to delivering high-quality solutions. Let's work together to bring your ideas to life!
-</p>
+ I am a dedicated mobile app developer with over 3 years of experience building high-quality applications using Flutter. I am committed to delivering reliable, maintainable, and performance-driven mobile solutions. Let's work together to bring your idea to life!</p>
           
         </motion.div>
         <motion.div
