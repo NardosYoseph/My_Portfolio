@@ -10,7 +10,7 @@ const projectsData = [
     title: "Real-time Chat Application",
     description: "Flutter Chat Application\nwith Firebase",
     image: "/images/chat_app.jpg",
-    tag: ["All", "Web"],
+    tag: ["All", "Mobile"],
     gitUrl: "https://github.com/NardosYoseph/flutter_realtime_chat_app",
     previewUrl: "/",
   },
